@@ -1,0 +1,47 @@
+{
+  "name": "old-magician",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -e ts --exec ts-node --esm src/app.ts",
+    "worker": "ts-node --esm src/worker.ts",
+    "lint": "eslint \"src/**/*.{js,ts}\" --fix",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/multer": "^3.0.2",
+    "@koa/router": "^12.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "image-thumbnail": "^1.0.15",
+    "koa": "^2.14.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^12.0.0",
+    "reflect-metadata": "^0.1.13",
+    "routing-controllers": "^0.10.2"
+  },
+  "devDependencies": {
+    "@types/image-thumbnail": "^1.0.1",
+    "@types/koa": "^2.13.5",
+    "@types/koa-bodyparser": "^4.3.10",
+    "@types/koa-router": "^7.4.4",
+    "@types/node": "^18.15.3",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.36.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "mongoose": "^7.0.1",
+    "nodemon": "^2.0.21",
+    "prettier": "^2.8.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
